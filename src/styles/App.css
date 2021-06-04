@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+  color: white;
+  background-color: #0987a7;
+  font-size: 1.2rem;
+}
+
+.home__image {
+  position: absolute;
+  width: 100vw;
+  height: 30vw;
+  z-index: 0;
+  margin-top: 70vw;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.euroBG {
+  position: absolute;
+  width: 120vw;
+  height: 75vw;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.App {
+  padding: 0 20rem;
+}
+
+h1 {
+  font-size: 5rem;
+}
+span {
+  color: #0b4d8f;
+}
+.title {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 200;
+  margin: 1rem 0;
+}
+
+h2:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: #037fff;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.596);
+}
+
+.item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+  padding-bottom: 6rem;
+}
+
+.item-container {
+  overflow: hidden;
+}
+
+.item-con {
+  width: 100%;
+  padding: 1.2rem 1.2rem;
+  background-color: #07707e;
+}
+
+.item-container > img {
+  width: 100%;
+  transition: all 0.9s ease-in-out;
+}
+
+.item-container > img:hover {
+  cursor: pointer;
+}
+
+.buttons {
+  width: 90%;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.btn {
+  padding: 1rem;
+  background-color: #073c4d;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: white;
+  transition: all 0.4s cubic-bezier(1, -0.16, 0.6, 1.35);
+}
+
+.btn:not(:last-child) {
+  margin: 1rem;
+}
+
+.btn:hover {
+  background-color: #2215dd;
+  cursor: pointer;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.btn:active,
+.btn:focus {
+  outline: none;
+  border: none;
+}

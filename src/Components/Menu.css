@@ -1,0 +1,6 @@
+.backgroundimage {
+  margin-top: -30vw;
+  width: 30vw !important;
+  height: auto !important;
+  transition: all 1s;
+}
